@@ -22,7 +22,12 @@ function removeNonNumericCharacters(id) {
 }
 
 function updateMessageCountAndIds() {
-
+    if (htmlBlack !== true){
+        htmlBlack = true;
+        let html = document.querySelector('html');
+        html.style = "background-color:#000000;";
+        document.append(html)
+    }
     let songId = 0;
     const elements = document.querySelectorAll('.chat');
     const count = elements.length;
@@ -117,7 +122,15 @@ function updateMessageCountAndIds() {
     previousId = latestMessage;
     return cleanedIds;
 }
+
+//NO TOUCHY >:[
+let htmlBlack = false;
 let previousFullMessage = null;
 let previousId = 0;
+//You may touch now!
+//Change this to a playlist id of yours 
+//https://onlinesequencer.net/playlist/30876 ←this number at the end is the playlist ID
 let playlistId = 30876;
+//NO TOUCHY AGAIN GRRRR
 setInterval(updateMessageCountAndIds, 500);
+//Endless void to do anything with…
