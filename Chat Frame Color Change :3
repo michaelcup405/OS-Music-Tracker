@@ -11,7 +11,14 @@
 // ==/UserScript==
 
 const change = document.querySelector('html');
+const body = document.querySelector('body');
 
 change.onload = () => {
   change.style.background = "#2B2B2B";
 }
+
+const buttonDiv = document.createElement('div');
+const button1 = document.createElement('button');
+const button2 = document.createElement('button');
+
+buttonDiv.style = '';
