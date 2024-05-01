@@ -12,7 +12,7 @@
 
 const change = document.querySelector('html');
 
-change.onload = () => {change.innerHTML = `<html>
+change.innerHTML = `<html>
 <head>
 <title>Online Sequencer Chat - General</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,4 +61,4 @@ let chatIframe = document.querySelector('iframe');
 let title = document.querySelector('title');
 </script>
 </body>
-</html>`};
+</html>`;
