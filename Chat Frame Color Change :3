@@ -10,9 +10,7 @@
 // @run-at document-top
 // ==/UserScript==
 
-const change = document.querySelector('html');
-
-change.innerHTML = `<html>
+const change = document.querySelector('html').innerHTML = `<html>
 <head>
 <title>Online Sequencer Chat - General</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
