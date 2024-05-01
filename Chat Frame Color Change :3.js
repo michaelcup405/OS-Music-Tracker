@@ -50,13 +50,9 @@ button {
 </head>
 <body>
 <div class="buttons">
-<button class="roomSelector" onclick="chatIframe.src = '/forum/chat_frame.php?ez_iframe=1?context=0'; title.innerText = 'Online Sequencer Chat - General';">General</button>
-<button class="roomSelector" onclick="chatIframe.src = '/forum/chat_frame.php?ez_iframe=1?context=10293847'; title.innerText = 'Online Sequencer Chat - Music';">Music</button>
+<button class="roomSelector" onclick="document.querySelector('iframe').src = 'https://onlinesequencer.net/forum/chat_frame.php?ez_iframe=1?context=0'; document.querySelector('title').innerText = 'Online Sequencer Chat - General';">General</button>
+<button class="roomSelector" onclick="document.querySelector('iframe').src = 'https://onlinesequencer.net/forum/chat_frame.php?ez_iframe=1?context=10293847'; document.querySelector('title').innerText = 'Online Sequencer Chat - Music';">Music</button>
 </div>
-<iframe src="/forum/chat_frame.php?ez_iframe=1?context=0"></iframe>
-<script>
-let chatIframe = document.querySelector('iframe');
-let title = document.querySelector('title');
-</script>
+<iframe src="https://onlinesequencer.net/forum/chat_frame.php?ez_iframe=1?context=0"></iframe>
 </body>
 </html>`;
