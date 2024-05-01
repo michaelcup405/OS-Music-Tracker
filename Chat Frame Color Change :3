@@ -1,0 +1,17 @@
+
+// ==UserScript==
+// @name         OS Chat Styling!
+// @match        https://onlinesequencer.net/forum/chat_frame.php
+// @version      2024-02-23
+// @description  Music is nice.
+// @author       You
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
+// @grant        none
+// @run-at document-top
+// ==/UserScript==
+
+const change = document.querySelector('html');
+
+change.onload = () => {
+  change.style.background = "#2B2B2B";
+}
